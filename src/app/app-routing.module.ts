@@ -217,6 +217,10 @@ const routes: Routes = [
     component: FashionDetailComponent
   },
   {
+    path: 'rolep',
+    loadChildren: () => import('./rolep/rolep.module').then(m => m.RolepModule)
+  },
+  {
     path: '**',
     redirectTo: 'page-not-found'
   },
